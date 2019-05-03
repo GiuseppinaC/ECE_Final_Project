@@ -128,7 +128,7 @@ H = model.fit_generator(
 
 # save the model to disk
 print("[INFO] serializing network...")
-model.save(args["model"])
+model.save_weights(args["model"])
 
 # save the multi-label binarizer to disk
 print("[INFO] serializing label binarizer...")
